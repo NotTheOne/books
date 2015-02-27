@@ -6,7 +6,7 @@
       <% end %>
       <div class="caption">
 
-        <p><strong><%= lint_to book.name, book_path(book) %></strong></p> <%# strong makes book name bold %>
+        <p><strong><%= link_to book.name, book_path(book) %></strong></p> <%# strong makes book name bold %>
         <p>$<%= book.price.to_f / 100 %></p>
 
       </div>
